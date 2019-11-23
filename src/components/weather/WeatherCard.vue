@@ -11,6 +11,9 @@
             align="center"
             justify="center"
         >
+        <v-col cols="12">
+            November 21st, <b>Day One</b>
+        </v-col>
             <v-col
                 cols="6"
                 class="display-3 text-left"

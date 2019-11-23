@@ -1,5 +1,5 @@
 <template>
-<v-card>
+<v-card :elevation="elevation" :height="height">
     <v-toolbar
         flat
         color="primary"
@@ -20,3 +20,23 @@
     </v-card-actions>
 </v-card>
 </template>
+
+<script>
+export default {
+    props: {
+        prominent: {
+            type: Boolean,
+            default: false
+        },
+        height: {
+            type: String,
+            default: 'auto'
+        }
+    },
+    computed: {
+        elevation() {
+            return this.prominent ? 10 : 2
+        }
+    }
+}
+</script>
